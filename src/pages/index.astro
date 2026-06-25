@@ -1,63 +1,19 @@
 ---
-
+// biome-ignore lint/correctness/noUnusedImports: Biome bug
+import RootLayout from "../layouts/RootLayout.astro";
 ---
 
-<html lang="en">
-<head>
-		<meta charset="utf-8" />
-		<!-- <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<link rel="icon" href="/favicon.ico" /> -->
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-  <title>Chris Lambe</title>
-  <style>
-    html, body {
-      height: 100%;
-      width: 100%;
-    }
-
-    body {
-      font-family: "Source Serif Pro", serif;
-      font-size: 12pt;
-      padding: 16px;
-      background: #fafafa;
-      color: #444;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      box-sizing: border-box;
-    }
-
-    a {
-      color: #c33;
-    }
-
-    p {
-      line-height: 1.5em;
-      -webkit-font-smoothing: antialiased;
-    }
-
-    .content {
-      max-width: 28rem;
-    }
-
-    .work-it {
-      direction: rtl;
-      unicode-bidi: bidi-override;
-      user-select: none;
-    }
-  </style>
-</head>
-<body>
-  <div class="content">
-    <h1>Oh hello,</h1>
-    <p>
-      I didn't see you there! Welcome to my internet website. As you can see it's a bit sparse at the moment. I've been doing a little spring cleaning and have come to the realization that the work displayed here is no longer representative of my skillset. So&nbsp;I've decided to put this site into limbo while I work on a better representation of said skillset. In the meantime, you can reach me at <strong class="work-it">moc.ebmalsirhc@sirhc</strong>.
-    </p>
-    <p>
-      Sincerely,<br />
-      Chris
-    </p>
+<RootLayout>
+  <div class="font-source-serif flex sm:items-center-safe justify-center fixed inset-0 overflow-auto">
+    <div class="space-y-4 max-w-lg px-8 py-10">
+      <h1 class="text-xl font-semibold font-source-serif">Oh hello,</h1>
+      <p class="font-source-serif">
+        I didn't see you there! Welcome to my internet website. As you can see it's a bit sparse at the moment. I've been doing a little spring cleaning and have come to the realization that the work displayed here is no longer representative of my skillset. So&nbsp;I've decided to put this site into limbo while I work on a better representation of said skillset. In the meantime, you can reach me at <strong class="work-it">moc.ebmalsirhc@sirhc</strong> or take a look at my <a href="/resume">résumé</a>.
+      </p>
+      <p class="whitespace-pre font-source-serif">
+        Sincerely,<br/>
+        Chris
+      </p>
+    </div>
   </div>
-</body>
-</html>
+</RootLayout>
